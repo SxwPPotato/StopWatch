@@ -8,13 +8,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
 
     ui->setupUi(this);
-    /*ms = 0;
-    s = 0;
-    m = 0;
-    tx_ms = 0;
-    tx_s = 0;
-    tx_m = 0;
-    timer = new QTimer();*/
 
     connect(q.timer, SIGNAL(timeout()), this, SLOT(slotTimerAlarm()));
     ui->ph_b_start->setText("Старт");
